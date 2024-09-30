@@ -9,17 +9,77 @@
         rel="stylesheet" 
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
         crossorigin="anonymous">
- 
-    <title>Blogpribadi</title>
+
+    <style>
+        body {
+            font-family: "JetBrains Mono", monospace;
+        }
+
+        .CardProfil {
+            max-width: 800px;
+            width: 100%;
+            border-radius: 25px;
+            padding: 10px;
+            border: 1px solid #13a3d3;
+            box-shadow: 0 5px 20px rgba(16, 165, 92, 0.4);
+            background: linear-gradient(90deg, rgba(255, 248, 232, 1) 1%, rgba(255, 248, 232, 1) 46%, rgba(211, 247, 242, 1) 63%);
+            margin: 0 auto;
+        }
+
+        .Image {
+            max-width: 300px;
+            width: 200px;
+            border-radius: 50px;
+            border: 1px solid #13a3d3;
+            box-shadow: 0 5px 20px rgba(161, 22, 22, 0.4);
+            margin: 20px auto 0;
+        }
+
+        body .container {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .background {
+            background: linear-gradient(90deg, rgba(247, 238, 211, 1) 4%, rgba(255, 248, 232, 1) 55%, rgba(161, 214, 178, 1) 100%);
+        }
+    </style>
+
+    <title>Blog Pribadi</title>
+    <link rel="icon" href="Assets/Source/Logo Title.png" type="image/x-icon">
+
 </head>
 <body>
+
+    <!--Navbar-->
+    <div class="navbars">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="companyprofile.html">Company Profile</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
+                        <a class="nav-link" href="product.html">Product</a>
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Isi Konten-->
     <div class="background"> 
     <div class="container"> 
         <div class="CardProfil" style="width: 50rem;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-4">
-                        <img src="Source/Rafel.jpg" alt="fotorafel" class="Image">
+                        <img src="Assets/Source/Profil Rafel.jpg" alt="FotoRafel" class="Image">
                     </div>
                     <div class="col-md">
                         <h3 class="text-center">BIODATA</h2>
@@ -29,6 +89,7 @@
                         <p><b>Motivasi:</b> Ingin Menjadi Programmer Handal, Namun Enggan Ngoding</p>
                     </div>
                 </div> 
+                <!--Ini Untuk Membuat Resume-->
                     <div class="col"> 
                         <hr>
                         <h3 class="text-center">RESUME</h3>
@@ -44,5 +105,12 @@
         </div>
     </div>    
     </div>
+
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+    </script>
+
 </body>
 </html>

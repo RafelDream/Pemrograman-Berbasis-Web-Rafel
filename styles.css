@@ -1,42 +1,31 @@
 /* styles.css */
 /*untuk mengati font*/ 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*Isi CSS di Bagian Navbar dan Scrollbar*/ 
+.navbars {
+  font-family: "Edu QLD Beginner", cursive;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  font-family: 'JetBrains Mono', monospace !important;
+  overflow: auto; /* Mengizinkan scroll */
 }
-
-/* Card Profil Styles */
-.CardProfil {
-  max-width: 800px;
-  width: 100%;
-  border-radius: 25px;
-  padding: 10px;
-  border: 1px solid #13a3d3;
-  box-shadow: 0 5px 20px rgba(16, 165, 92, 0.4);
-  background: linear-gradient(90deg, rgba(255, 248, 232, 1) 1%, rgba(255, 248, 232, 1) 46%, rgba(211, 247, 242, 1) 63%);
-  margin: 0 auto;
-}
-
-/* Image Styles */
-.Image {
-  max-width: 300px;
-  width: 200px;
-  border-radius: 50px;
-  border: 1px solid #13a3d3;
-  box-shadow: 0 5px 20px rgba(161, 22, 22, 0.4);
-  margin: 20px auto 0;
-}
-
-/* Container Styles */
-.container {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-}
-
-/* Background Styles */
-.background {
-  background: linear-gradient(90deg, rgba(247, 238, 211, 1) 4%, rgba(255, 248, 232, 1) 55%, rgba(161, 214, 178, 1) 100%);
-}
-
- 

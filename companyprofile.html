@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+        crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: "JetBrains Mono", monospace;
+        }
+        .banner {
+            height: 80vh;
+            background-image: url('Assets/Source/BG\ Company\ Profile.jpg');
+            background-size: cover;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(25, 183, 218, 0.6);
+        }
+
+        .banner h2 {
+            color: #fff;
+            z-index: 1;
+            padding: 20px 25px;
+            border: 3px solid #fff;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .about {
+            color: rgb(197, 43, 32);
+            padding-bottom: 100px;
+            text-align: center;
+        }
+
+        .about p {
+            color: #666;
+            word-spacing: 2px;
+            line-height: 25px;
+            margin-bottom: 10px;
+            border: 1px solid  rgb(197, 43, 32);;
+        }
+
+        .service {
+            color: rgb(197, 43, 32);
+            text-align: center;
+            background-color: #e8e2e2;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .box .col-4 {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            border: 1px solid;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 10px;
+        }
+
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <title>Company Profile</title>
+    <link rel="icon" href="Assets/Source/Logo Title.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <!--Navbar-->
+    <div class="navbars">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="companyprofile.html">Company Profile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html">About Me</a>
+                    <a class="nav-link" href="product.html">Product</a>
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <!--Banner Company Profile dan About US-->
+    <section class="banner">
+        <h2>Gundam Heaven World Toys</h2>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h3>ABOUT US</h3>
+            <p>Selamat datang di Gundam Haven, toko serba ada untuk segala hal tentang Gundam! Kami mengkhususkan diri dalam menyediakan model kit Gundam, action figure, dan aksesoris berkualitas tinggi. 
+            Misi kami adalah menghadirkan kegembiraan dalam membuat dan mengoleksi Gundam kepada penggemar segala usia, menawarkan beragam produk mulai dari perlengkapan tingkat pemula hingga model tingkat lanjut dan sangat detail.
+            Di Gundam Haven, kami percaya bahwa setiap model lebih dari sekedar mainan, melainkan sebuah karya seni. Baik Anda seorang pembangun berpengalaman atau baru memulai, kami siap membantu Anda menemukan tambahan yang sempurna untuk koleksi Anda. Jelajahi pilihan kami dan bergabunglah dengan komunitas penggemar Gundam.</p>
+        </div>
+    </section>
+
+    <!--Bagian Service-->
+    <section class="service">
+        <div class="container">
+            <h3>SERVICE</h3>
+            <div class="box">
+                <div class="col-4">
+                  <div class="icon">
+                    <img src="Assets/Icon_Service/Nipper.png" alt="Toolkit">
+                </div>
+                    <h4>Toolkit</h4>
+                </div>
+                <div class="col-4">
+                  <div class="icon">
+                    <img src="Assets/Icon_Service/Cat.png" alt="Bahan Cat">
+                </div>
+                    <h4>Bahan Cat</h4>
+                </div>
+                <div class="col-4">
+                  <div class="icon">
+                    <img src="Assets/Icon_Service/gunpla.png" alt="Gunpla">
+                </div>
+                    <h4>Gunpla</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
